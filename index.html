@@ -1,0 +1,107 @@
+!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kévin Shop - Inscription</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #004080;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        main {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #004080;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        button:hover {
+            background-color: #003060;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: #004080;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kévin Shop</h1>
+        <p>La banque qui vous accompagne partout.</p>
+    </header>
+    <main>
+        <h2>Formulaire d'inscription</h2>
+        <form action="/submit-form" method="POST">
+            <label for="lastname">Nom :</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Exemple : Dupont" required>
+            
+            <label for="firstname">Prénom :</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Exemple : Jean" required>
+            
+            <label for="phone">Numéro de téléphone :</label>
+            <input type="text" id="phone" name="phone" placeholder="Exemple : +22912345678" required>
+            
+            <label for="email">Adresse email :</label>
+            <input type="email" id="email" name="email" placeholder="Exemple : exemple@email.com" required>
+            
+            <label for="birthdate">Date de naissance :</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+            
+            <label for="country">Pays :</label>
+            <select id="country" name="country" required>
+                <option value="">--Sélectionnez votre pays--</option>
+                <option value="benin">Bénin</option>
+                <option value="france">France</option>
+                <option value="usa">États-Unis</option>
+                <!-- Ajoutez d'autres pays si nécessaire -->
+            </select>
+            
+            <label for="city">Ville :</label>
+            <input type="text" id="city" name="city" placeholder="Exemple : Cotonou" required>
+            
+            <button type="submit">S'inscrire</button>
+        </form>
+        <footer>
+            <p>À propos de nous : <a href="https://www.facebook.com/profile.php?id=100089880126141">Page Facebook</a> |
+            <a href="https://wa.me/22960933186">WhatsApp</a> |
+            <a href="mailto:hkpkevin228@gamil.com">Email</a></p>
+        </footer>
+    </main>
+</body>
+          </html>
