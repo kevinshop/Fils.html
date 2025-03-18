@@ -97,6 +97,26 @@
             
             <button type="submit">S'inscrire</button>
         </form>
+  <script>
+        // Sélectionner le formulaire et le conteneur du message
+        const form = document.getElementById('registration-form');
+        const confirmationMessage = document.getElementById('confirmation-message');
+
+        // Écouter l'événement de soumission
+        form.addEventListener('submit', function(event) {
+            // Empêcher le rechargement automatique de la page
+            event.preventDefault();
+
+            // Afficher le message de confirmation
+            confirmationMessage.textContent = "Inscription réussie. Nous examinerons vos informations et nous vous enverrons un retour par mail ou sur WhatsApp.";
+            confirmationMessage.style.display = "block";
+
+            // Optionnel : soumettre après une attente
+            setTimeout(() => {
+                form.submit();
+            }, 3000);
+        });
+    </script>
         <footer>
             <p>À propos de nous : <a href="https://www.facebook.com/profile.php?id=100089880126141">Page Facebook</a> |
             <a href="https://wa.me/22960933186">WhatsApp</a> |
