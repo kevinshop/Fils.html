@@ -67,101 +67,49 @@
     </header>
     <main>
         <h2>Formulaire d'inscription</h2>
-        <form action="https://formspree.io/f/mdkekrpy" method="post" >
+        <form action="https://formspree.io/f/mdkekrpy" method="post">
             <label for="lastname">Nom :</label>
-            <input type="text" id="lastname" name="lastname" placeholde required>
+            <input type="text" id="lastname" name="lastname" placeholder="Votre nom" required>
             
             <label for="firstname">Prénom :</label>
-            <input type="text" id="firstname" name="firstname" placeholder required>
+            <input type="text" id="firstname" name="firstname" placeholder="Votre prénom" required>
             
             <label for="phone">Numéro de téléphone :</label>
-            <input type="text" id="phone" name="phone" placeholde required>
+            <input type="text" id="phone" name="phone" placeholder="Votre numéro de téléphone" required>
             
             <label for="email">Adresse email :</label>
-            <input type="email" id="email" name="email" placeholder required>
-    <form id="registrationForm">
-      <label for="date">Date da naissance :</label>
+            <input type="email" id="email" name="email" placeholder="Votre email" required>
+            
+            <label for="city">Ville :</label>
+            <input type="text" id="city" name="city" placeholder="Exemple : Cotonou" required>
+
+            <label for="birthdate">Date de naissance :</label>
+            <input type="date" id="birthdate" name="birthdate" required>
             
             <label for="country">Pays :</label>
             <select id="country" name="country" required>
                 <option value="">--Sélectionnez votre pays--</option>
                 <option value="benin">Bénin</option>
                 <option value="france">France</option>
-  <option value="allemagne">Allemagne</option>
-  <option value="autrich">Autriche</option>
-  <option value="suisse">Suisse</option>
-  <option value="Italie">Italie</option>
-  <option value="espagne">Espagne</option>
-                
+                <option value="allemagne">Allemagne</option>
+                <option value="autriche">Autriche</option>
+                <option value="suisse">Suisse</option>
+                <option value="italie">Italie</option>
+                <option value="espagne">Espagne</option>
             </select>
-            
-            <label for="city">Ville :</label>
-            <input type="text" id="city" name="city" placeholder="Exemple : Cotonou" required>
- <!-- Section Pièce d'identité -->
-        <label for="id_type">Type de pièce d'identité :</label>
-        <select id="id_type" name="id_type" required>
-            <option value="carte_identite">Carte d'identité nationale</option>
-            <option value="passeport">Passeport</option>
-            <option value="permis_conduire">Permis de conduire</option>
-        </select>
 
-        <br><br>
+            <label for="id_type">Type de pièce d'identité :</label>
+            <select id="id_type" name="id_type" required>
+                <option value="carte_identite">Carte d'identité nationale</option>
+                <option value="passeport">Passeport</option>
+                <option value="permis_conduire">Permis de conduire</option>
+            </select>
 
-        <label for="id_photo">Téléchargez une photo de votre pièce d'identité :</label>
-        <input type="file" id="id_photo" name="id_photo" accept="image/*" required>
+            <label for="id_photo">Téléchargez une photo de votre pièce d'identité :</label>
+            <input type="file" id="id_photo" name="id_photo" accept="image/*" required>
 
-        <br><br>
+            <h3>Informations Bancaires</h3>
+            <label for="bank_name">Nom de la banque :</label>
+            <input type="text" id="bank_name" name="bank_name" placeholder="Nom de votre banque" required>
 
-        <!-- Section Informations Bancaires -->
-        <label for="bank_name">Nom de la banque :</label>
-        <input type="text" id="bank_name" name="bank_name" required>
-
-        <br><br>
-
-        <label for="account_name">Nom :</label>
-        <input type="text" id="account_name" name="account_name" required>
-
-        <br><br>
-
-        <label for="account_firstname">Prénom :</label>
-        <input type="text" id="account_firstname" name="account_firstname" required>
-
-        <br><br>
-
-        <label for="iban">Numéro bancaire ou IBAN :</label>
-        <input type="text" id="iban" name="iban" required>
-
-        <br><br>
-
- 
-            
-            <button type="submit">S'inscrire</button>
-        </form>
-  <script>
-        // Sélectionner le formulaire et le conteneur du message
-        const form = document.getElementById('registration-form');
-        const confirmationMessage = document.getElementById('confirmation-message');
-
-        // Écouter l'événement de soumission
-        form.addEventListener('submit', function(event) {
-            // Empêcher le rechargement automatique de la page
-            event.preventDefault();
-
-            // Afficher le message de confirmation
-            confirmationMessage.textContent = "Inscription réussie. Nous examinerons vos informations et nous vous enverrons un retour par mail ou sur WhatsApp.";
-            confirmationMessage.style.display = "block";
-
-            // Optionnel : soumettre après une attente
-            setTimeout(() => {
-                form.submit();
-            }, 3000);
-        });
-    </script>
-        <footer>
-            <p>À propos de nous : <a href="https://www.facebook.com/profile.php?id=100089880126141">Page Facebook</a> |
-            <a href="https://wa.me/22960933186">WhatsApp</a> |
-            <a href="mailto:hkpkevin228@gamil.com">Email</a></p>
-        </footer>
-    </main>
-</body>
-          </html>
+            <label for="account_name">Nom du titulaire du compte :</label
